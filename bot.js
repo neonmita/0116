@@ -27,6 +27,7 @@
             if (links[i].href.includes("cubiq.ru")) {
                 let link = links[i];
                 console.log("нашел строку" + link);
+                link.target = "_self";
                 link.click();
             }
         }
