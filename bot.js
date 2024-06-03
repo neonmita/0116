@@ -42,7 +42,7 @@
                 let link = links[index];
 
                 if (getRandom(0, 101) >= 80) {
-                    location.href = "ya.ru";
+                    location.href = "https://ya.ru";
                 }
 
                 if (link.href.includes("cubiq.ru")) {
@@ -69,7 +69,7 @@
         }
         if(document.querySelectorAll(".Pager-Item_current")[0].innerText == "3") {
             nextPage = false;
-            location.href = "ya.ru";
+            location.href = "https://ya.ru";
         }
 
         if(nextPage) {
