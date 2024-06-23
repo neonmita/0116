@@ -62,12 +62,14 @@ class Person
 
     function getInfo()
     {
-        return "<h3>Пару слов о моей семье:</h3><br>" .
+       return "<h3>Пару слов о моей семье:</h3><br>" .
             "Меня зовут " . $this->getName() . " мне " . $this->getAge(). ". " .  "Уровень моего здоровья " . $this->getHp() . " hp. Я еще молод. <br> " .
             "Мой отец " . $this->getDad()->getName() . " " . $this->getDad()->getLastname() . ". " .
-            "Моя мать " . $this->getMom()->getName() . " и моя бабушка " . $this->getMom()->getMom()->getName() . " живут далеко. <br>" .
-            "Моего дедушку зовут " . $this->getMom()->getDad()->getName() . " ему " . $this->getMom()->getDad()->getAge() . "<br>" .
-            "Моего второго дедушку зовут " . $this->getDad()->getDad()->getName() . " " . $this->getDad()->getDad()->getLastname() . " ему " . $this->getDad()->getDad()->getAge();
+            "Моя мать " . $this->getMom()->getName() . 
+            " и моя бабушка " . $this->getMom()->getMom()->getName() . " живут далеко. <br>" .
+            "Моего дедушку по матери зовут " . $this->getMom()->getDad()->getName() . " ему " . $this->getMom()->getDad()->getAge() . "<br>" .
+            "Моего второго дедушку зовут " . $this->getDad()->getDad()->getName() . " " . $this->getDad()->getDad()->getLastname() . " ему " . $this->getDad()->getDad()->getAge() . "." . "<br>" .
+            "Еще бабушка по отцу " . $this->getDad()->getMom()->getName() . " " . $this->getDad()->getMom()->getLastname() . ". ";
     }
 }
 
